@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card Generator</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #c0392b;
+        }
+        .card-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .card {
+            max-width: 300px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Valentine's Day Card Generator</h1>
+        <form action="#" method="post">
+            <label for="message">Enter your message:</label>
+            <input type="text" id="message" name="message" required>
+            <input type="submit" value="Generate Card">
+        </form>
+        <div class="card-container">
+            <div class="card">
+                <img src="heart.png" alt="Heart Image" style="width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                <div class="message" style="padding: 20px; background-color: #e74c3c; color: #fff; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                    Your Message Here
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
